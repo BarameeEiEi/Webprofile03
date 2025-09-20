@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+      body {
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        background-color: #001147;
+        color: #fff;
+      }
+
+      header {
+        background-color: #010c3a;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+      }
+      header nav a {
+        color: #fff;
+        margin-left: 25px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      .hero {
+        max-width: 1200px;
+        margin: 60px auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 40px;
+        background-color: #02154d;
+        border-radius: 12px;
+      }
+
+      .hero-text {
+        flex: 1 1 450px;
+      }
+
+      .hero-text h1 {
+        font-size: 60px;
+        line-height: 1.1;
+        margin: 0 0 20px;
+        font-weight: 700;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        color: #d0d4e0;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .contact-btn {
+        display: inline-block;
+        padding: 12px 26px;
+        background: linear-gradient(to right, #4a8bff, #5fa9ff);
+        color: #000b3a;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        font-size: 14px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .icon-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background: #1a1a1a;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .icon-btn:hover {
+        background: #333;
+      }
+
+      .hero-image {
+        flex: 1 1 350px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-image img {
+        width: 350px;
+        height: 450px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      .about {
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: #02154d;
+        border-radius: 12px;
+      }
+
+      .about-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        align-items: flex-start;
+      }
+
+      .about-text {
+        flex: 1 1 500px;
+      }
+
+      .about-text h2 {
+        font-size: 40px;
+        margin: 0 0 20px;
+        font-weight: 700;
+      }
+
+      .about-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #d0d4e0;
+      }
+
+      .about-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 12px 26px;
+        background: #e0e5f5;
+        color: #000b3a;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        font-size: 14px;
+      }
+
+      .about-icon-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background: #1a1a1a;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .about-icon-btn:hover {
+        background: #333;
+      }
+
+      .about-image {
+        flex: 1 1 500px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-image img {
+          width: 100%;
+          height: auto;
+        }
+        .about-content {
+          flex-direction: column;
+          text-align: center;
+        }
+        .about-image img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CHANINTORN CHALERMSUK</h1>
+      <nav>
+        <a href="#">Work</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>HI, I AM<br />CHANINTORN C.</h1>
+        <p>
+          นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย<br />
+          ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้
+        </p>
+        <div class="buttons">
+          <a href="#" class="contact-btn">CONTACT ME</a>
+          <a href="#" class="icon-btn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="icon-btn"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./image/profile.jpg" alt="Profile Image" />
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>ABOUT ME</h2>
+          <h1>
+            ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ
+            กำลังมองหาโอกาสที่น่าตื่นเต้นในการทำงาน
+            มีพื้นฐานการศึกษาด้านวิศวกรรมซอฟต์แวร์
+          </h1 >
+          <p>
+            ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์
+            มีความเชื่อว่าสื่อสารอย่างถูกต้องออกแบบให้เหมาะสมกับทุกคน
+            ตอนนี้กำลังพัฒนาทักษะการเรียนรู้ด้าน ReactJS
+            และการออกแบบเว็บไซต์ให้ตอบโจทย์ได้ดีขึ้น
+          </p>
+          <div class="about-buttons">
+            <a href="#" class="download-btn">DOWNLOAD RESUME</a>
+            <a href="#" class="about-icon-btn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="about-icon-btn"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="./image/profile.jpg" alt="Working Image" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
